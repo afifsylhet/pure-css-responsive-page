@@ -1,0 +1,159 @@
+
+/* -----------------------
+ common Style roles 
+ ------------------------*/
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    background-color:#E5E5E5;
+}
+
+
+/* -----------------------
+            Navbar
+ ------------------------*/
+
+nav{
+    background-color: #562EFF;
+    height: 94px;
+    color:white;
+    margin-bottom: 20px;
+}
+
+.nav-flex{
+    display: flex;
+    justify-content:space-between; 
+    align-items: center;
+    width: 870px;
+    margin: 0 auto;
+}
+
+.nav-icon{
+    font-size: 45px;
+}
+
+.nav-icon > span {
+    font-size: 30px;
+}
+
+.nav-item > ul {
+    list-style: none;
+    color: rgb(150, 14, 14);
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.nav-item > ul > li{
+    padding-left: 18px;
+    padding-right: 18px;
+    font-size: 24;
+}
+
+ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-item > ul > li > img {
+    height: 51px;
+    width: 51px;
+    margin:0px;
+}
+
+/* ------------------------------------------
+    Main Part /Frist Section Start From Here
+ -------------------------------------------*/
+
+
+ .player-section {
+    background-color: white;
+    height: 680px;
+    width: 870px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.heading {
+    font-size: 24;
+    color: #562EFF;
+    font-weight: 500;
+}
+
+.players-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap:40px;
+    grid-column-gap: 80px;
+    margin-bottom: 30px;
+    margin-top: 40;
+}
+
+.all-players{
+    display: flex;
+}
+
+
+.player-photo > img{
+     height: 56px;
+     width: 56px;
+ }
+
+ .player-name > p{
+     color: black;
+     font-size: 18px;
+     margin-left: 16px;
+ }
+
+hr{
+     border: 1px solid #D1D1D1;
+     margin-bottom: 30px;
+ }
+
+ /* ------------------------------------------
+    Frist Section 2nd Part Start From Here
+ -------------------------------------------*/
+
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap:30px;
+    grid-column-gap: 79px;
+}
+
+.heading-hello{
+    font-size: 24px;
+    color: #562EFF;
+    font-weight: 500;
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+.blog-flex{
+    display: flex;
+    align-items: center;
+}
+.blog-photo img {
+     width: 177px;
+     height: 117px;
+     margin-right: 16px;
+ }
+
+
+.blog-name{
+    font-size: 20px;
+}
+
+.blog-from {
+    font-size: 16px;
+    color: #562EFF;
+}
+
+.by {
+color: #9F9F9F;
+}
