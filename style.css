@@ -1,282 +1,241 @@
+/* ------------------
+    Google Fonts
+------------------  */
 
-/* -----------------------
- common Style roles 
- ------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* ------------------
+    Common Styles
+------------------- */
+
+*{
+    margin: 0px;
+}
 
 body{
     font-family: 'Poppins', sans-serif;
-    margin:0;
-    background-color:#E5E5E5;
+    background-color:  #E5E5E5;;
+}
+
+h3{
+    max-width: 90%;
 }
 
 
-/* -----------------------
-            Navbar
- ------------------------*/
 
-nav{
-    background-color: #562EFF;
-    width: 100%;
-    height: 94px;
-    color:white;
-    margin-bottom: 20px;
-}
-
-.nav-flex{
-    display: flex;
-    justify-content:space-between; 
-    align-items: center;
-    width: 870px;
-    margin: 0 auto;
-}
-
-.nav-icon{
-    font-size: 45px;
-}
-
-.nav-icon > span {
-    font-size: 30px;
-}
-
-.nav-item > ul {
-    list-style: none;
-    color: rgb(150, 14, 14);
-    display: flex;
-    align-items:center;
-    justify-content: center;
-}
-
-.nav-item > ul > li{
-    padding-left: 18px;
-    padding-right: 18px;
-    font-size: 24;
-}
-
-ul > li > a {
-    text-decoration: none;
-    color: white;
-}
-
-.nav-item > ul > li > img {
-    height: 51px;
-    width: 51px;
-    margin:0px;
-}
-
-/* ------------------------------------------
-    Main Part /Frist Section Start From Here
- -------------------------------------------*/
-
-
- .player-section {
-    background-color: white;
-    height: 680px;
-    width: 870px;
-    padding-left: 30px;
-    padding-top: 10px;
-    padding-right: 30px;
-    padding-bottom: 30px;
-    margin: 0 auto;
-    border-radius: 5px;
-    margin-bottom: 20px;
-}
-
-.heading {
-    font-size: 24;
-    color: #562EFF;
-    font-weight: 500;
-}
-
-.players-list{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-row-gap:40px;
-    grid-column-gap: 80px;
+/*--------------------------------
+    Top Player Starts from Here
+---------------------------------*/
+main{
+    margin-top: 30px;
     margin-bottom: 30px;
-    margin-top: 40;
+}
+.section-1{
+    width: 870px;
+    height: 600px;
+    padding: 33px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
 }
 
-.all-players{
-    display: flex;
-}
-
-
-.player-photo > img{
-     height: 56px;
-     width: 56px;
- }
-
- .player-name > p{
-     color: black;
-     font-size: 18px;
-     margin-left: 16px;
- }
-
-hr{
-     border: 1px solid #D1D1D1;
-     margin-bottom: 30px;
- }
-
- /* ------------------------------------------
-    Frist Section 2nd Part Start From Here
- -------------------------------------------*/
-
-
-.grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-row-gap:30px;
-    grid-column-gap: 79px;
-}
-
-.heading-hello{
+.section-1 h1{
     font-size: 24px;
     color: #562EFF;
-    font-weight: 500;
+}
+.section-1-part-1{
+    padding-bottom: 30px;
+}
+
+.player-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 35px;
+}
+
+.player-item{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
     margin-top:30px;
+}
+
+.player-item img{
+width: 56px;
+height: 56px;
+}
+
+.player-item h2{
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+/*-----------------------------------
+    Top blog section Starts from Here
+--------------------------------------*/
+
+.blog-section-title{
+    color:#562EFF;
+    margin-top: 30px;
     margin-bottom: 30px;
 }
-.blog-flex{
+
+.blog-container{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+.blog-item{
     display: flex;
     align-items: center;
 }
-.blog-photo img {
-     width: 177px;
-     height: 117px;
-     margin-right: 16px;
- }
-
-
-.blog-name{
-    font-size: 20px;
+.blog-item img{
+    height: 117px;
+    width: 177px;
+    margin-right: 15px;
 }
 
-.blog-from {
-    font-size: 16px;
-    color: #562EFF;
+.blog-text-color{
+color: #562EFF;
+font-size: 16px;
+}
+.by-color{
+color: #9F9F9F;
 }
 
-.by {
-    color: #9F9F9F;
-}
+/*----------------------------------
+    Latest Course Starts from Here
+------------------------------------*/
 
- /* ------------------------------
-     Section Two Start From Here 
- -------------------------------- */
-
-
-.last-section {
+.course-section{
     background-color: white;
-    height: 350px;
     width: 870px;
-    padding-left: 30px;
-    padding-top: 10px;
-    padding-right: 30px;
-    padding-bottom: 30px;
+    border-radius: 8px;
     margin: 0 auto;
-    border-radius: 5px;
+    padding:30px;
 }
 
-.last-grid{
+.course-section h2{
+    color: #562EFF;
+    font-size: 24px;
+}
+
+.course-container{
+    margin-top: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 30px;
+}
+.course{
+    width: 230px;
+    padding:3px;
 }
 
-.last-flex{
+.course img{
     width: 224px;
+    height: 104px;
 }
 
- .course-photo div img {
-     width: 224px;
-     height: 104px;
- }
+.course-by{
+    color: #ED6B4F;
+    font-size: 16px;
+}
 
- .course-info{
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
- }
-.hello1{
-    display:flex;
-    color:#FFC014;
-    font-size: 14px;
+.course-info{
+    display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+.raings{
+    color: yellow;
+}
+.time{
+    border: 1px solid red;
+    text-align: center;
+    border-radius: 20px;
+    width: 100px;
+    background-color: 
+    #FFE4E8;
+}
 
-/* -------------------------------------
-    Responsive Style Start from her 
-    ------------------------------------*/
+/*------------------------------------
+    Tablet Responsive Starts from Here
+--------------------------------------*/
 
-
-    @media screen and (max-width: 688px) {
-
-        .nav-icon{
-        font-size: 24px;
-        text-align: center;
-        }
-        .nav-flex {
-            width: 100%;
-        }       
-        .player-section {
-            width: 100%;
-            height: 100%;
-        }
-        .players-list {
-            grid-template-columns: 1fr;
-                }
-
-        .grid {
-                display: grid;
-                grid-template-columns: 1fr;
-                        }
-        .all-players{
-            justify-content: center;
-        }
-        .last-section{
-            width: 100%;
-            height: 100%
-        }
-        .last-grid{
-        grid-template-columns: 1fr;
-        }
-        .last-flex{
-            justify-content: center;
-        }
+@media only screen and (max-width:992px) and (min-width:669px) {
+    .section-1{
+        height: auto;
     }
-    @media screen and (min-width: 689px) and (max-width: 992px) {
-
-
-        .nav-flex {
-            width: 100%;
-        }       
-        .player-section {
-            width: 100%;
-            height: 100%;
-        }
-        .players-list {
-            grid-template-columns: 1fr 1fr;
-        }
-
-        .grid {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                        }
-        .all-players{
-            justify-content: center;
-        }
-        .last-section{
-            width: 100%;
-            height: 100%
-        }
-        .last-grid{
+    .player-container{
+        display: grid;
         grid-template-columns: 1fr 1fr;
-        }
-        .last-flex{
-            justify-content: center;
-        }
+        width: 100%;
     }
 
-        
+    .blog-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+
+
+    .blog-item{
+        display: block;
+    }
+
+    .course-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+
+}
+
+
+/*------------------------------------
+    Mobile Responsive Starts from Here
+--------------------------------------*/
+
+@media only screen and (max-width:668px){
+    .section-1{
+        height: auto;
+        width: 100%;
+    }
+    .player-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 500px;
+    }
+
+    .player-item{
+        width: 400px;
+    }
+
+    .blog-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .blog-item{
+        display: block;
+    }
+
+    .course-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .blog-item div {
+        max-width: 300px;
+    }
+
+}
